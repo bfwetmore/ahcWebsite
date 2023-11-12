@@ -1,0 +1,64 @@
+.nav-link {
+  color: White;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.container {
+  background-color: white;
+  
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+  /* Add more src lines for other formats if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto-Bold", monospace;
+  font-size: 1rem;
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+.form-control {
+  margin-bottom: .5rem;
+  width: 18rem;
+}
+
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgba(3, 31, 75, 0.945);
+  color: White;
+  margin-bottom: 3rem;
+}
+
+.header-text{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.nav-divider{
+  flex-basis:0;flex-grow:1;text-align:center;
+  display: block;padding:var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  margin-bottom:calc(-1 * var(--bs-nav-tabs-border-width));
+}
+
+.red-astrict {
+  color: red;
+}
+
+.footer {
+  color: white;
+  margin-top: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgba(3, 31, 75, 0.945);
+}

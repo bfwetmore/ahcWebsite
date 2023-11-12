@@ -1,0 +1,116 @@
+---
+layout: _layouts/base.njk
+title: Contact Us
+---
+
+<div class="row">
+  <div class="col">
+    <span class="header-text">Contact Us</span>
+    <div class="row">
+      <div class="col ms-md-3 mb-3">
+        <p class="">
+          With over 50 years of combined family expertise, we're not just
+          heating and cooling specialists; we're your trusted partners in
+          creating a comfortable home. Experience the warmth of a family-owned
+          touch – contact us for service with a personal commitment to your
+          comfort.
+        </p>
+      </div>
+    </div>
+
+    <form class="g-3 needs-validation" action="" method="post" novalidate>
+      <hr />
+      <h4 class="fw-bold">Contact Info</h4>
+      <br />
+      <div class="row">
+        <div class="col">
+          <label class="form-label" for="firstName">
+            First Name <span class="red-astrict">*</span>
+          </label>
+          <input class="form-control" id="firstName" type="text" required />
+          <div class="invalid-feedback">Please enter a first name.</div>
+
+          <label class="form-label" for="lastName">
+            Last Name <span class="red-astrict">*</span>
+          </label>
+          <input class="form-control" id="lastName" type="text" required />
+          <div class="invalid-feedback">Please enter a last name.</div>
+        </div>
+        <div class="col">
+          <label class="form-label me-3" for="phone">Phone </label>
+          <input id="textMe" type="checkbox" />
+
+          <label for="textMe" class="fst-italic small">Text Me</label>
+          <input class="form-control" id="phone" type="text" />
+
+          <label class="form-label" for="email"
+            >Email <span class="red-astrict">*</span>
+          </label>
+          <input class="form-control" id="email" type="email" required />
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+      </div>
+      <hr />
+      <h4 class="fw-bold">Address</h4>
+      <br />
+      <div class="row">
+        <div class="col">
+          <label class="form-label" for="street">Street</label>
+          <input class="form-control" id="street" type="text" />
+
+          <label class="form-label" for="lastName">City</label>
+          <input class="form-control" id="lastName" type="text" />
+          <br />
+        </div>
+        <div class="col">
+          <label class="form-label" for="zipCode"
+            >Zip Code <span class="red-astrict">*</span>
+          </label>
+          <input class="form-control" id="zipCode" type="text" required />
+          <div class="invalid-feedback">Please enter a zip code.</div>
+        </div>
+      </div>
+      <hr />
+      <h4 class="fw-bold">Requested Services</h4>
+      <br />
+      <div class="row">
+        <div class="col">
+          <input id="cleaningBool" type="checkbox" />
+          <label for="cleaningBool">HVAC Cleaning</label>
+        </div>
+        <div class="col">
+          <input id="newInstall" type="checkbox" />
+          <label for="newInstall">New Install</label>
+        </div>
+        <div class="col">
+          <input id="repair" type="checkbox" />
+          <label for="repair">HVAC Repair</label>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          <input id="evaluation" type="checkbox" />
+          <label for="evaluation">Home Efficiency Evaluation</label>
+        </div>
+        <div class="col">
+          <input id="other" type="checkbox" />
+          <label for="other">Other</label>
+        </div>
+        <div class="col">{# placeholder #}</div>
+      </div>
+      <hr />
+      <div class="row">
+        <label for="comment">Comment:</label>
+        <br />
+        <textarea id="comment" type="text" class="w-100" rows="4"></textarea>
+      </div>
+      <div class="row my-5">
+        <div class="col">
+          <button type="submit" class="btn btn-lg btn-secondary fw-bold">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

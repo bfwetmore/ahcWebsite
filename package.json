@@ -1,0 +1,20 @@
+{
+  "name": "ahcwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx eleventy --serve",
+    "tailrun": "npx tailwindcss -i ./tailwindInput.css -o ./_site/styles/tailwindOutput.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.1"
+  }
+}
