@@ -18,7 +18,7 @@ title: Contact Us
       </div>
     </div>
 
-    <form class="g-3 needs-validation" action="" method="post" novalidate>
+    <form class="g-3 needs-validation" action="" data-static-form-name="contact" novalidate>
       <hr />
       <h4 class="fw-bold">Contact Info</h4>
       <h5>This page is under construction and will not submit. Please Email or call us instead</h5>
@@ -28,13 +28,13 @@ title: Contact Us
           <label class="form-label" for="firstName">
             First Name <span class="red-astrict">*</span>
           </label>
-          <input class="form-control" id="firstName" type="text" required />
+          <input class="form-control" name="firstname" id="firstName" type="text" required />
           <div class="invalid-feedback">Please enter a first name.</div>
 
           <label class="form-label" for="lastName">
             Last Name <span class="red-astrict">*</span>
           </label>
-          <input class="form-control" id="lastName" type="text" required />
+          <input class="form-control" name="lastname" id="lastName" type="text" required />
           <div class="invalid-feedback">Please enter a last name.</div>
         </div>
         <div class="col">
@@ -107,7 +107,7 @@ title: Contact Us
       </div>
       <div class="row my-5">
         <div class="col">
-          <button style="disabled: true;" type="submit" class="btn btn-lg btn-secondary fw-bold">
+          <button type="submit" class="btn btn-lg btn-secondary fw-bold">
             Submit
           </button>
         </div>
