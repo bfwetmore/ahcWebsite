@@ -28,26 +28,26 @@ title: Contact Us
           <label class="form-label" for="firstName">
             First Name <span class="red-astrict">*</span>
           </label>
-          <input class="form-control" name="firstname" id="firstName" type="text" required />
+          <input class="form-control" name="First Name" id="firstName" type="text" required />
           <div class="invalid-feedback">Please enter a first name.</div>
 
           <label class="form-label" for="lastName">
             Last Name <span class="red-astrict">*</span>
           </label>
-          <input class="form-control" name="lastname" id="lastName" type="text" required />
+          <input class="form-control" name="Last Name" id="lastName" type="text" required />
           <div class="invalid-feedback">Please enter a last name.</div>
         </div>
         <div class="col">
           <label class="form-label me-3" for="phone">Phone </label>
-          <input id="textMe" type="checkbox" />
+          <input id="textMe" type="checkbox" name="Can Text"/>
 
           <label for="textMe" class="fst-italic small">Text Me</label>
-          <input class="form-control" id="phone" type="text" />
+          <input class="form-control" id="phone" type="text" name="Phone" />
 
           <label class="form-label" for="email"
             >Email <span class="red-astrict">*</span>
           </label>
-          <input class="form-control" id="email" type="email" required />
+          <input class="form-control" id="email" type="email" name="Email" required />
           <div class="invalid-feedback">Please enter a valid email.</div>
         </div>
       </div>
@@ -57,17 +57,17 @@ title: Contact Us
       <div class="row">
         <div class="col">
           <label class="form-label" for="street">Street</label>
-          <input class="form-control" id="street" type="text" />
+          <input class="form-control" id="street" type="text" name="Street"/>
 
           <label class="form-label" for="lastName">City</label>
-          <input class="form-control" id="lastName" type="text" />
+          <input class="form-control" id="lastName" type="text" name="City" />
           <br />
         </div>
         <div class="col">
           <label class="form-label" for="zipCode"
             >Zip Code <span class="red-astrict">*</span>
           </label>
-          <input class="form-control" id="zipCode" type="text" required />
+          <input class="form-control" id="zipCode" type="text" name="ZipCode" required />
           <div class="invalid-feedback">Please enter a zip code.</div>
         </div>
       </div>
@@ -76,25 +76,25 @@ title: Contact Us
       <br />
       <div class="row">
         <div class="col">
-          <input id="cleaningBool" type="checkbox" />
+          <input id="cleaningBool" type="checkbox" name="Cleaning" />
           <label for="cleaningBool">HVAC Cleaning</label>
         </div>
         <div class="col">
-          <input id="newInstall" type="checkbox" />
+          <input id="newInstall" type="checkbox" name="New Install" />
           <label for="newInstall">New Install</label>
         </div>
         <div class="col">
-          <input id="repair" type="checkbox" />
-          <label for="repair">HVAC Repair</label>
+          <input id="repair" type="checkbox" name="Service" />
+          <label for="repair">HVAC Service</label>
         </div>
       </div>
       <div class="row mt-4">
         <div class="col">
-          <input id="evaluation" type="checkbox" />
+          <input id="evaluation" type="checkbox" name"Efficiency Eval" />
           <label for="evaluation">Home Efficiency Evaluation</label>
         </div>
         <div class="col">
-          <input id="other" type="checkbox" />
+          <input id="other" type="checkbox" name="Other" />
           <label for="other">Other</label>
         </div>
         <div class="col">{# placeholder #}</div>
@@ -103,7 +103,7 @@ title: Contact Us
       <div class="row">
         <label for="comment">Comment:</label>
         <br />
-        <textarea id="comment" type="text" class="w-100" rows="4"></textarea>
+        <textarea id="comment" type="text" class="w-100" rows="4" name="Comment"></textarea>
       </div>
       <div class="row my-5">
         <div class="col">
