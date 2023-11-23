@@ -1,15 +1,18 @@
-import mailchannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
+import mailChannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
 
-export const onRequest = mailchannelsPlugin({
+export const onRequest: PagesFunction = mailChannelsPlugin({
   personalizations: [
     {
-      to: [{ name: "Lead Recieved", email: "bfwetmore@gmail.com" }],
+      to: [{ name: "AHC", email: "bfwetmore@gmail.com" }],
     },
   ],
-  from: { name: "Leads", email: "lead@approvedheatingandcooling.com" },
-  respondWith: () =>
-    new Response(null, {
-      status: 302,
-      headers: { Location: "/" },
-    }),
+  from: {
+    name: "New Lead",
+    email: "leads@approvedheatingandcooling.com",
+  },
+  respondWith: () => {
+    return new Response(
+      `Thank you for submitting your enquiry. A member of the team will be in touch shortly.`
+    );
+  },
 });
