@@ -25,10 +25,10 @@ export const onRequest = mailchannelsPlugin({
       to: [{ name: "AHC", email: "bfwetmore@gmail.com" }],
     },
   ],
-  from: { name: "Lead", email: "noreply@approvedheatingandcooling.com" },
+  from: { name: "New Lead", email: "noreply@approvedheatingandcooling.com" },
   respondWith: () =>
     new Response(null, {
       status: 302,
-      headers: { Location: "/" },
+      headers: { Location: "/thankyou" },
     }),
 });
