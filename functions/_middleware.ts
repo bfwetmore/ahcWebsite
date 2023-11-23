@@ -25,7 +25,7 @@ export const onRequest = mailchannelsPlugin({
       to: [{ name: "AHC", email: "bfwetmore@gmail.com" }],
     },
   ],
-  from: { name: "Lead", email: "lead@approvedheatingandcooling.com" },
+  from: { name: "Lead", email: "noreply@approvedheatingandcooling.com" },
   respondWith: () =>
     new Response(null, {
       status: 302,
