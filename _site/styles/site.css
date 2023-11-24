@@ -8,7 +8,7 @@ body {
 
 .container {
   background-color: white;
-  
+
 }
 
 @font-face {
@@ -42,15 +42,18 @@ body {
 
 }
 
-.header-text{
+.header-text {
   font-size: 4rem;
   margin-bottom: 1rem;
 }
 
-.nav-divider{
-  flex-basis:0;flex-grow:1;text-align:center;
-  display: block;padding:var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  margin-bottom:calc(-1 * var(--bs-nav-tabs-border-width));
+.nav-divider {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
 }
 
 .red-astrict {
@@ -62,7 +65,7 @@ body {
   margin-top: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color:  rgba(38, 40, 42, 0.945);
+  background-color: rgba(38, 40, 42, 0.945);
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -72,4 +75,34 @@ body {
 
 .cooling {
   color: #1288be
+}
+
+
+/* Styles for navbar */
+#navbar {
+  display: inline-block;
+  /* Displayed by default */
+}
+
+/* Styles for hamburger-nav */
+#hamburger-nav {
+  display: none;
+  /* Hidden by default */
+}
+
+/* Media query for screens smaller than 1200px */
+@media (max-width: 1200px) {
+  #navbar {
+    display: none;
+    /* Hide navbar when screen width is under 1200px */
+  }
+
+  #hamburger-nav {
+    display: inline-block;
+    /* Display hamburger-nav when screen width is under 1200px */
+  }
+}
+
+.dropdown-item:hover {
+  background-color: lightgrey;
 }

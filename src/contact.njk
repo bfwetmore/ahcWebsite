@@ -18,24 +18,23 @@ title: Contact Us
       </div>
     </div>
 
-    <form class="g-3 needs-validation" data-static-form-name="contact" novalidate>
+    <form class="row g-3 needs-validation" data-static-form-name="contact" novalidate>
       <script src="https://www.google.com/recaptcha/api.js"></script>
-      <hr />
+      <hr/>
       <h4 class="fw-bold">Contact Info</h4>
-      <h5>This page is under construction and will not submit. Please Email or call us instead</h5>
-      <br />
+      <br/>
       <div class="row">
         <div class="col">
           <label class="form-label" for="firstName">
             First Name <span class="red-astrict">*</span>
           </label>
-          <input class="form-control" name="First Name" id="firstName" type="text" required />
+          <input class="form-control" name="First Name" id="firstName" type="text" required/>
           <div class="invalid-feedback">Please enter a first name.</div>
 
           <label class="form-label" for="lastName">
             Last Name <span class="red-astrict">*</span>
           </label>
-          <input class="form-control" name="Last Name" id="lastName" type="text" required />
+          <input class="form-control" name="Last Name" id="lastName" type="text" required/>
           <div class="invalid-feedback">Please enter a last name.</div>
         </div>
         <div class="col">
@@ -43,67 +42,69 @@ title: Contact Us
           <input id="textMe" type="checkbox" name="Can Text"/>
 
           <label for="textMe" class="fst-italic small">Text Me</label>
-          <input class="form-control" id="phone" type="text" name="Phone" />
+          <input class="form-control" id="phone" type="text" name="Phone"/>
 
           <label class="form-label" for="email"
             >Email <span class="red-astrict">*</span>
           </label>
-          <input class="form-control" id="email" type="email" name="Email" required />
+          <input class="form-control" id="email" type="email" name="Email" required/>
           <div class="invalid-feedback">Please enter a valid email.</div>
         </div>
       </div>
-      <hr />
+      <hr/>
       <h4 class="fw-bold">Address</h4>
-      <br />
+      <br/>
       <div class="row">
         <div class="col">
           <label class="form-label" for="street">Street</label>
           <input class="form-control" id="street" type="text" name="Street"/>
 
-          <label class="form-label" for="lastName">City</label>
-          <input class="form-control" id="lastName" type="text" name="City" />
-          <br />
+          <label class="form-label" for="city">City</label>
+          <input class="form-control" id="city" type="text" name="City"/>
+          <br/>
         </div>
         <div class="col">
           <label class="form-label" for="zipCode"
             >Zip Code <span class="red-astrict">*</span>
           </label>
-          <input class="form-control" id="zipCode" type="text" name="ZipCode" required />
+          <input class="form-control" id="zipCode" type="text" name="ZipCode" required/>
           <div class="invalid-feedback">Please enter a zip code.</div>
         </div>
       </div>
-      <hr />
+      <hr/>
       <h4 class="fw-bold">Requested Services</h4>
-      <br />
+      <br/>
       <div class="row">
         <div class="col">
-          <input id="cleaningBool" type="checkbox" name="Cleaning" />
+          <input id="cleaningBool" type="checkbox" name="Cleaning"/>
           <label for="cleaningBool">HVAC Cleaning</label>
         </div>
         <div class="col">
-          <input id="newInstall" type="checkbox" name="New Install" />
+          <input id="newInstall" type="checkbox" name="New Install"/>
           <label for="newInstall">New Install</label>
         </div>
         <div class="col">
-          <input id="repair" type="checkbox" name="Service" />
+          <input id="repair" type="checkbox" name="Service"/>
           <label for="repair">HVAC Service</label>
         </div>
       </div>
       <div class="row mt-4">
         <div class="col">
-          <input id="evaluation" type="checkbox" name"Efficiency Eval" />
+          <input id="evaluation" type="checkbox" name"Efficiency Eval"/>
           <label for="evaluation">Home Efficiency Evaluation</label>
         </div>
         <div class="col">
-          <input id="other" type="checkbox" name="Other" />
+          <input id="other" type="checkbox" name="Other"/>
           <label for="other">Other</label>
         </div>
-        <div class="col">{# placeholder #}</div>
+        <div class="col">
+          {# placeholder #}
+        </div>
       </div>
-      <hr />
+      <hr/>
       <div class="row">
         <label for="comment">Comment:</label>
-        <br />
+        <br/>
         <textarea id="comment" type="text" class="w-100" rows="4" name="Comment"></textarea>
       </div>
       <div class="row my-5">
@@ -119,3 +120,28 @@ title: Contact Us
     </form>
   </div>
 </div>
+
+<script>
+  (() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array
+      .from(forms)
+      .forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form
+            .classList
+            .add('was-validated')
+        }, false)
+      })
+  })()
+</script>

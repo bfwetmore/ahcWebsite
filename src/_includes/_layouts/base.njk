@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/bootstrap.min.css">
-    <link rel="stylesheet" href="/styles/site.css">
-    <link rel="stylesheet" href="/styles/icons">
-    <script src="/scripts/bootstrap.bundle.min.js"></script>
-    <script src="/scripts/custom.js"></script>
-    <title>{{title}}</title>
-</head>
-<body>
-    <div class="container">
-        {% include "navbar.njk" %}
-        <div class="ms-3 me-3">
-            {{content | safe}}
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Transform your indoor comfort with expert HVAC services. Our certified technicians provide heating, and air conditioning solutions for residential spaces. Trust us for efficient installations, repairs, and maintenance. Contact us for a personalized HVAC experience.">
+        <link rel="stylesheet" href="/styles/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles/site.css">
+        <script src="/scripts/bootstrap.bundle.min.js"></script>
+        <script src="/scripts/custom.js"></script>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <div class="container">
+            {% include "navbar.njk" %}
+            <div class="ms-3 me-3">
+                {{content | safe}}
+            </div>
             {% include "footer.njk" %}
-    </div>
+        </div>
 
-</body>
+    </body>
 </html>
