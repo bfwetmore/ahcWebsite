@@ -35,9 +35,11 @@ body {
 .header {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: rgba(3, 31, 75, 0.945);
+  background-color: rgba(38, 40, 42, 0.945);
   color: White;
   margin-bottom: 3rem;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+
 }
 
 .header-text{
@@ -60,5 +62,14 @@ body {
   margin-top: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: rgba(3, 31, 75, 0.945);
+  background-color:  rgba(38, 40, 42, 0.945);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.heating {
+  color: #be3333
+}
+
+.cooling {
+  color: #1288be
 }
